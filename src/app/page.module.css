@@ -5,6 +5,45 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  z-index: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  z-index: 100;
+  width: 60rem;
+  height: 30rem;
+  padding: 1.5rem;
+  background: rgba(var(--background-rgb), 0.9);
+  backdrop-filter: blur(24px);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border: 2px solid white;
+  opacity: 100%;
+}
+
+.startBtn {
+  position: absolute;
+  bottom: 0;
+  right: 42%;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background: rgba(var(--background-rgb), 0.9);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .description {
